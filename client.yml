@@ -15,7 +15,7 @@ spec:
       containers:
       - image: networkstatic/iperf3
         name: iperf3 
-        args: ['-c', 'server', '--parallel', '40', '-i', '1', '-t', '2']
+        args: ['-c', 'server', '--parallel', '40', '-i', '1', '-t', 'inf']
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
